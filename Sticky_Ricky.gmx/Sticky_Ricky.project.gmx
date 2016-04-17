@@ -14,6 +14,8 @@
     <sprite>sprites\spr_Spikes</sprite>
     <sprite>sprites\spr_lava</sprite>
     <sprite>sprites\spr_water</sprite>
+    <sprite>sprites\spr_glob</sprite>
+    <sprite>sprites\spr_wall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_metal</background>
@@ -37,6 +39,8 @@
     <object>objects\obj_lava</object>
     <object>objects\obj_parent_exitRoom</object>
     <object>objects\obj_particleSystem</object>
+    <object>objects\obj_glob</object>
+    <object>objects\obj_wall</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
