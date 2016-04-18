@@ -6,13 +6,11 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_Ricky</sprite>
     <sprite>sprites\sp_saw</sprite>
     <sprite>sprites\sp_sawbox</sprite>
     <sprite>sprites\spr_Blob</sprite>
     <sprite>sprites\spr_solid</sprite>
     <sprite>sprites\spr_Spikes</sprite>
-    <sprite>sprites\spr_lava</sprite>
     <sprite>sprites\spr_water</sprite>
     <sprite>sprites\spr_glob</sprite>
     <sprite>sprites\spr_wall</sprite>
@@ -22,6 +20,10 @@
     <background>background\background1</background>
     <background>background\background2</background>
     <background>background\background3</background>
+    <background>background\bg_morning</background>
+    <background>background\bg_night</background>
+    <background>background\bg_noon</background>
+    <background>background\bg_sunset</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -29,7 +31,6 @@
     <script>scripts\sc_part_blood_init.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_Ricky</object>
     <object>objects\obj_saw</object>
     <object>objects\obj_sawbox</object>
     <object>objects\obj_Blob</object>
@@ -40,7 +41,8 @@
     <object>objects\obj_parent_exitRoom</object>
     <object>objects\obj_particleSystem</object>
     <object>objects\obj_glob</object>
-    <object>objects\obj_wall</object>
+    <object>objects\obj_background_trans</object>
+    <object>objects\obj_Test</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>

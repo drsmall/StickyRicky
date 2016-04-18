@@ -52,10 +52,8 @@ randomClockTime = randomTime_max;
           <argument>
             <kind>1</kind>
             <string>myObj = instance_create(x,y, obj_saw);
-myObj.vspeed = background_vspeed[1];
 
-myObj.image_xscale = 3;
-myObj.image_yscale = 3;
+
 </string>
           </argument>
         </arguments>
