@@ -25,10 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomTime_max = 500;
-randomTime_min = 200;
-
-randomClockTime = randomTime_max;
+            <string>seconds = 60;
+randomTime_max = 2.5*seconds;
+randomTime_min = 1.5*seconds;
 </string>
           </argument>
         </arguments>
@@ -53,7 +52,6 @@ randomClockTime = randomTime_max;
             <kind>1</kind>
             <string>myObj = instance_create(x,y, obj_saw);
 
-
 </string>
           </argument>
         </arguments>
@@ -76,12 +74,12 @@ randomClockTime = randomTime_max;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomTime = random(randomClockTime);
+            <string>randomTime = random_range(randomTime_min, randomTime_max);
 if(alarm[0] == -1){    
-    randomClockTime-=10;
-    if(randomTime &lt; randomTime_min) randomClockTime = randomTime_min;
+    randomTime_max-=1;
+    if(randomTime_max &lt; randomTime_min) randomTime_max = randomTime_min;
     alarm[0] = randomTime;
-    show_debug_message(randomClockTime);
+    show_debug_message(randomTime);
 }
 
 </string>

@@ -55,9 +55,7 @@ glob=physics_particle_group_end();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
