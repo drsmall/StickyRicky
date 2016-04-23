@@ -40,7 +40,7 @@
     <object>objects\obj_parent_exitRoom</object>
     <object>objects\obj_particleSystem</object>
     <object>objects\obj_background_trans</object>
-    <object>objects\obj_Blob_new</object>
+    <object>objects\flamethrower</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>

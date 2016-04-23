@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_parent_exitRoom</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,36 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>seconds = 60;
-randomTime_max = 2.5*seconds;
-randomTime_min = 1.5*seconds;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>randomObj = choose(obj_saw, flamethrower);
-myObj = instance_create(x,y, randomObj);
-if(myObj.x &gt; 500){
-    myObj.direction=180;
-}
+            <string>fire = part_system_create();
+flame = part_type_create();
+
+
+part_type_color2(flame, c_orange, c_red);
+part_type_direction(flame, direction-28, direction-13, 0, 2);
+part_type_life(flame,30,40);
+part_type_shape(flame, pt_shape_smoke);
+part_type_speed(flame, 10,10,0,.03);
+part_type_alpha3(flame,1,.8,0);
+part_type_blend(flame,1);
+part_type_size(flame, .1,.4,0,0);
+
+em = part_emitter_create(fire);
 
 </string>
           </argument>
@@ -78,14 +62,9 @@ if(myObj.x &gt; 500){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomTime = random_range(randomTime_min, randomTime_max);
-if(alarm[0] == -1){    
-    randomTime_max-=1;
-    if(randomTime_max &lt; randomTime_min) randomTime_max = randomTime_min;
-    alarm[0] = randomTime;
-    show_debug_message(randomTime);
-}
-
+            <string>part_emitter_region(fire,em,x-10,x+10,y+2,y-2,ps_shape_rectangle,ps_distr_linear);
+part_emitter_burst(fire,em,flame,5);
+y+=4;
 </string>
           </argument>
         </arguments>
