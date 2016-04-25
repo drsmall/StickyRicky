@@ -28,9 +28,14 @@
             <string>fire = part_system_create();
 flame = part_type_create();
 
+part_type_direction(flame, direction-28, direction-13, 0, 2);
+if(x &gt; 500){
+    direction=180;
+    part_type_direction(flame, direction+13, direction+28, 0, 2);
+}
 
 part_type_color2(flame, c_orange, c_red);
-part_type_direction(flame, direction-28, direction-13, 0, 2);
+
 part_type_life(flame,30,40);
 part_type_shape(flame, pt_shape_smoke);
 part_type_speed(flame, 10,10,0,.03);

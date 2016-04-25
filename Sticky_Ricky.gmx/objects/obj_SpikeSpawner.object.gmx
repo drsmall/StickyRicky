@@ -52,9 +52,7 @@ randomTime_min = 1.5*seconds;
             <kind>1</kind>
             <string>randomObj = choose(obj_saw, flamethrower);
 myObj = instance_create(x,y, randomObj);
-if(myObj.x &gt; 500){
-    myObj.direction=180;
-}
+
 
 </string>
           </argument>
