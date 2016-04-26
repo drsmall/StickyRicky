@@ -3,13 +3,13 @@
   <caption></caption>
   <width>1080</width>
   <height>1920</height>
-  <vsnap>18</vsnap>
-  <hsnap>18</hsnap>
+  <vsnap>120</vsnap>
+  <hsnap>120</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
-  <colour>12632256</colour>
-  <showcolour>0</showcolour>
+  <colour>14194740</colour>
+  <showcolour>-1</showcolour>
   <code></code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
@@ -31,14 +31,14 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bg_metal" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="1" stretch="0"/>
-    <background visible="-1" foreground="-1" name="background1" x="0" y="0" htiled="0" vtiled="-1" hspeed="0" vspeed="4" stretch="0"/>
-    <background visible="-1" foreground="-1" name="background2" x="900" y="0" htiled="0" vtiled="-1" hspeed="0" vspeed="4" stretch="0"/>
-    <background visible="-1" foreground="0" name="bg_morning" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="bg_night" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="bg_sunset" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="bg_noon" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="bg_morning" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="1" stretch="0"/>
+    <background visible="-1" foreground="-1" name="" x="0" y="0" htiled="0" vtiled="-1" hspeed="0" vspeed="4" stretch="0"/>
+    <background visible="-1" foreground="-1" name="" x="900" y="0" htiled="0" vtiled="-1" hspeed="0" vspeed="4" stretch="0"/>
+    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
     <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1080" hview="1920" xport="0" yport="0" wport="500" hport="900" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -51,16 +51,14 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_Blob" x="198" y="612" name="inst_7C169304" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Solid" x="162" y="0" name="inst_5342E6C2" locked="0" code="" scaleX="1.79999995231628" scaleY="190.800003051758" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Solid" x="900" y="0" name="inst_407B0602" locked="0" code="" scaleX="1.79999995231628" scaleY="190.800003051758" colour="4294967295" rotation="0"/>
-    <instance objName="obj_SpikeSpawner" x="126" y="-504" name="inst_2F66F44A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Blob" x="550" y="1510" name="inst_7C169304" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lava" x="0" y="1728" name="inst_EDCE2211" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Solid" x="900" y="-18" name="inst_0E126E5A" locked="0" code="" scaleX="26" scaleY="196.199996948242" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Solid" x="180" y="-18" name="inst_71927535" locked="0" code="" scaleX="-21.6000003814697" scaleY="196.199996948242" colour="4294967295" rotation="0"/>
-    <instance objName="obj_background_trans" x="0" y="1962" name="inst_E6A410CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_SpikeSpawner" x="954" y="-198" name="inst_C0B175DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="flamethrower" x="180" y="396" name="inst_04AC0DFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="0" y="1560" name="inst_2DAF4D9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="240" y="1080" name="inst_E2328AA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="0" y="600" name="inst_F4A93654" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="240" y="120" name="inst_8B9AFFC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Solid" x="-120" y="0" name="inst_E9A10657" locked="0" code="" scaleX="12" scaleY="180" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Solid" x="1080" y="0" name="inst_ADC1B0DC" locked="0" code="" scaleX="12" scaleY="180" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
